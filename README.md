@@ -3,6 +3,7 @@
 ## Installation
 
 1. Navigate to Cluster Explorer -> Continuous Delivery -> Git Repos.
+2. Create a new GitRepo with the following YAML:
 
 ```yaml
 apiVersion: fleet.cattle.io/v1alpha1
