@@ -1,0 +1,15 @@
+defaultNamespace: kube-system
+
+helm:
+  chart: aws-ebs-csi-driver
+  repo: https://kubernetes-sigs.github.io/aws-ebs-csi-driver
+  version: v1.2.2
+  force: false
+  values:
+    awsAccountNumber: global.fleet.clusterLabels.awsAccountNumber
+    clusterName: global.fleet.clusterLabels.clusterName
+  valuesFiles:
+    - values.yaml
+
+paused: false
+
